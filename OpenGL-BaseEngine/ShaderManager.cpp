@@ -4,6 +4,7 @@ std::map<const char*, Shader> ShaderManager::graphicShaders = std::map<const cha
 std::map<const char*, Shader> ShaderManager::computeShaders = std::map<const char*, Shader>();
 
 void ShaderManager::InitShaders() {
+	AddShader("reticle");
 	AddShader("particle");
 	AddShader("particle", ShaderType::COMPUTE);
 }

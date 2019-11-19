@@ -15,8 +15,13 @@ private:
 	virtual void OnRender() override;
 	virtual void OnEnd() override;
 
-	Camera* camera;
+	unsigned int VAO;
+	unsigned int VBO;
+	bool crosshairActive;
+	
+	Shader* shader;
 
+	Camera* camera;
 	ParticleSystem* particles;
 
 };
